@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body >
+        <header class="header">
+            <a href="#home" class="logo">
+                Charles Loic <span>Noah</span>
+            </a>
+
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="CV_Fr.pdf" target="_blank">Resume</a>
+            </nav>
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hi, It's <span>Charles</span></h1>
+
+                <h3>
+                    I'm a <span>Student in computer Engineering</span>
+                </h3>
+
+                <br>
+                <br>
+                <p>
+                    Self-taught and passionate engineering student, I build innovative
+                    systems that bridge the hardware and software worlds. From an
+                     Quarto AI using Minimax with Alpha-Beta pruning to
+                    embedded systems and full-stack applications, I love tackling
+                    complex architectural challenges across Embedded Systems, Software,
+                    AI, and Data Engineering.
+                </p>
+                <div class="social-icon">
+                    <a href="https://github.com/charlesnoah344" target="_blank">
+                        <i class="bx bxl-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/charlesnoah" target="_blank">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#contact" class="btn">Contact</a>
+                    <a href="CV_Fr.pdf" target="_blank" class="btn">Resume</a>
+                </div>
+            </div>
+            <div class="home-img">
+                    <img src="Profile-photo.jpeg" alt="">
+                </div>
+        </section>
+
+        <section class="about" id="about">
+
+
+    <div class="about-content">
+        <h2>About <span>Me</span></h2>
+
+        <div class="about-grid">
+
+            <div class="about-box">
+                <h3>Education</h3>
+                <p>
+                    ECAM, Brussels, Belgium
+                    <br>
+                    <br>Master 1 in Industrial Engineering, Computer Science (2026 - Present)
+                </p>
+                <h4>Bachelor obtained with Distinction (2023-2026)</h4>
+            </div>
+
+            <div class="about-box">
+                <h3>Technical Skills</h3>
+                <p>Python • C# • C/C++ • JavaScript • SQL (SQLite, MariaDB) • Bash •
+                    React • Node.js • Avalonia UI • FastAPI • Pandas • NumPy •
+                    Matplotlib • TensorFlow • Scikit-learn • OpenCV • Git • Docker •
+                    Arduino • Altium Designer • LTSpice
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>Certifications</h3>
+                <p>
+                    <a href="https://certificates.cs50.io/41e137c9-850e-4ba1-884d-354beafac7f6.pdf?size=letter" target="_blank">CS50 Python</a>, Harvard University<br>
+
+                    <a href="https://cs50.harvard.edu/certificates/70910280-2fbf-476f-9b62-9810681585b4" target="_blank">CS50 AI</a>, Harvard University
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>Achievements</h3>
+                <p>
+                    • Bachelor's Degree obtained with Distinction <br> • 
+                    Volunteer developer for the open-source project OpenBikeSensor (Avello) <br> • 
+                    Math, Physics & CS mentor (ALMA Academy)
+                </p>
+            </div>
+
+        </div>
+
+        <a href="#projects" class="btn">Read More</a>
+
+    </div>
+
+</section>
+
+        <section class="projects" id="projects">
+            <h2 class="heading">Projects</h2>
+            <div class="project-box">
+
+                <div class="project-card">
+                    <img src="quarto.png" height="300px" width="300px" alt="">
+                    <h3>Networked Quarto AI</h3>
+                    <p>An unbeatable AI for the board game Quarto, combining Minimax with Alpha-Beta pruning and socket-based networking for smooth multiplayer play.</p>
+                    <a href="https://github.com/charlesnoah344/Noah_Loic-Lassey_Lincoln-Quarto-PI_2C" class="btn">Review Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="chess-db.png" height="300px" width="300px" alt="">
+                    <h3>Chess Federation Management</h3>
+                    <p>A C# (Avalonia UI) management system for a chess federation, handling players, tournaments, and rankings.</p>
+                    <a href="https://github.com/charlesnoah344/Projet-Chess_DB" class="btn">Review Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="kitbox.png" height="300px" width="300px" alt="">
+                    <h3>Fuul-Stack App for Kitbox's company</h3>
+                    <p>A C# desktop application used in store to configure modular cabinets, validate orders, and manage stock and supplier purchasing.</p>
+                    <a href="https://github.com/charlesnoah344/Software-Engineering-Project" class="btn">Review Project</a>
+                </div>
+
+
+                <div class="project-card">
+                    <img src="pingpong_copy.png" height="300px" width="300px" alt="">
+                    <h3>2D Ping Pong Game</h3>
+                    <p>A 2D Ping Pong game built in C# with the Avalonia UI framework.</p>
+                    <a href="https://github.com/charlesnoah344/Ping-Pong-Game" class="btn">Review Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="demineur.png" height="300px" width="300px" alt="">
+                    <h3>Minesweeper (Pygame)</h3>
+                    <p>A recreation of the classic Minesweeper game in Python using Pygame, with procedural grid generation and mine detection.</p>
+                    <a href="https://github.com/charlesnoah344/projet-d-mineur" class="btn">Review Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="morpion.png" height="300px" width="300px" alt="">
+                    <h3>Tic-Tac-Toe vs AI</h3>
+                    <p>A Tic-Tac-Toe game against an AI implementing the Minimax algorithm for an unbeatable opponent.</p>
+                    <a href="https://github.com/charlesnoah344/tictactoe-vs-IA" class="btn">Review Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="demo3.png" height="300px" width="300px" alt="">
+                    <h3>Degrees of Separation (BFS)</h3>
+                    <p>A breadth-first search algorithm that computes the degree of separation between two actors.</p>
+                    <a href="https://github.com/charlesnoah344/Lien-entre-Acteur" class="btn">Review Project</a>
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="experience" id="experience">
+            <h2 class="heading">Experience</h2>
+            <div class="experience-container">
+                <div class="experience-box">
+                    <div class="experience-info">
+                        <i class="bx bxl-python"></i>
+                        <h4>Movie Recommender Full Stack ML</h4>
+                        <p>Description</p>
+                    </div>
+                </div>
+
+                <div class="experience-box">
+                    <div class="experience-info">
+                        <i class="bx bx-code-curly"></i>
+                        <h4>Flappy-Bird Pygame</h4>
+                        <p>Description</p>
+                    </div>
+                </div>
+
+                <div class="experience-box">
+                    <div class="experience-info">
+                        <i class="bx bxl-java"></i>
+                        <h4>University Registration System</h4>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <!-- Crée ton propre formulaire sur https://formspree.io et remplace l'URL ci-dessous.
+         Sans ça, les messages du formulaire partiraient chez l'auteur original du template. -->
+    <form action="[À REMPLIR: ton endpoint Formspree]" method="POST">
+        <div class="input-group">
+            <div class="input-box">
+                <!-- Added name="name" -->
+                <input type="text" name="name" placeholder="Full Name" required>
+                <!-- Added name="email" -->
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group"></div>
+
+            <div class="input-box">
+                <!-- Added name="phone" -->
+                <input type="number" name="phone" placeholder="Phone Number">
+                <!-- Added name="subject" -->
+                <input type="text" name="subject" placeholder="Subject">
+            </div>
+            <div class="input-group"></div>
+        </div>
+
+        <div class="input-group2">
+            <!-- Added name="message" -->
+            <textarea name="message" id="" placeholder="Your Message" cols="30" rows="10" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </div>
+    </form>
+</section>
+
+        
+
+        <footer class="footer">
+            <div class="social-icon">
+                <a href="https://github.com/charlesnoah344" target="_blank">
+                    <i class="bx bxl-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/charlesnoah" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+            </div>
+
+            <ul class="list">
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <!-- Hide this for now 
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                -->
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+                <p class="copyright">
+                    © Charles Noah | All Rights Reserved
+                </p>
+            </ul>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
