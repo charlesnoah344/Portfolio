@@ -3,6 +3,10 @@
 ## Présentation
 Portfolio personnel basé sur un template statique HTML/CSS/JS. Il présente mes compétences, mes projets et permet de me contacter directement.
 
+## URL du portfolio :
+
+https://charlesnoah344.github.io/Portfolio/
+
 ## Fonctionnalités
 - Design responsive (desktop / mobile)
 - Section Projets avec descriptions et liens
