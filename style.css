@@ -305,7 +305,7 @@ section{
     background: var(--bg-color);
     border-color: var(--main-color);
     box-shadow: 0 0 25px rgba(234,88,12,0.5);
-    transform: scale(1.08);
+    transform: scale(1.3);
     z-index: 5;
 }
 .experience-info{
@@ -315,6 +315,10 @@ section{
     align-items: flex-start;
     padding: 4rem 3rem 3.5rem;
     width: 100%;
+}
+.experience-info img{
+    align-self: center;
+    margin-bottom: 2rem;
 }
 .experience-icon{
     display:flex;
