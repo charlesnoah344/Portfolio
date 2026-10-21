@@ -10,8 +10,15 @@ https://charlesnoah344.github.io/Portfolio/
 ## Fonctionnalités
 - Design responsive (desktop / mobile)
 - Section Projets avec descriptions et liens
-- Section About (formation, compétences, certifications, réalisations)
+- Section About (formation, certifications, réalisations)
+- Section Technical Skills : 6 catégories avec logos, contexte d'utilisation et liens « Applied in » vers les expériences/projets
 - Formulaire de contact (via Formspree)
+
+## Ajouter une compétence
+1. Mettre le logo SVG dans `icons/` (sources utilisées : [Devicon](https://devicon.dev) et [Simple Icons](https://simpleicons.org)).
+   Si le logo est trop sombre pour le fond noir, changer sa couleur `fill` dans le fichier SVG.
+2. Copier un bloc `<div class="skill-item">` dans la bonne catégorie de la section `#skills` de `index.html`.
+   Sans logo disponible, remplacer `<img>` par une icône Boxicons (ex. `<i class="bx bx-chip"></i>`).
 
 ## Technologies
 - **HTML** — structure du contenu
