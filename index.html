@@ -3,590 +3,519 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Charles Noah</title>
-        <link rel="icon" type="image/jpeg" href="Profile-photo.jpeg">
+        <title>Charles Loïc Noah | Computer Engineering Student</title>
+        <meta name="description" content="Charles Loïc Noah, computer engineering student (MSc, ECAM Brussels) focused on software, data engineering and cloud. Open to student jobs now and a master's internship from January to June 2028.">
+        <link rel="canonical" href="https://charlesnoah344.github.io/Portfolio/">
+        <meta name="theme-color" content="#0a0a0a">
+
+        <!-- Aperçu du lien quand on le partage (LinkedIn, messageries...) -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://charlesnoah344.github.io/Portfolio/">
+        <meta property="og:title" content="Charles Loïc Noah | Computer Engineering Student">
+        <meta property="og:description" content="Software, Data Engineering & Cloud. Android apps driving industrial machines, a FastAPI back-end used by 10+ people, and more.">
+        <meta property="og:image" content="https://charlesnoah344.github.io/Portfolio/img/og-image.jpg">
+        <meta property="og:image:width" content="600">
+        <meta property="og:image:height" content="600">
+        <meta name="twitter:card" content="summary">
+
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Indique au CSS que JavaScript est actif (pour les animations d'apparition) -->
+        <script>document.documentElement.classList.add('js');</script>
     </head>
-    <body >
-        <header class="header">
-            <a href="#home" class="logo">
-                Charles Loic <span>Noah</span>
-            </a>
+    <body>
+        <header class="header" id="header">
+            <div class="container header-inner">
+                <a href="#home" class="logo" aria-label="Charles Loïc Noah, back to top">CLN<span>.</span></a>
 
-            <i class="bx bx-menu" id="menu-icon"></i>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navbar">
+                    <i class="bx bx-menu"></i>
+                </button>
 
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="CV_Charles_Noah.pdf" target="_blank">Resume</a>
-            </nav>
+                <nav class="navbar" id="navbar" aria-label="Main">
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact" class="nav-cta">Contact</a>
+                </nav>
+            </div>
         </header>
 
-        <section class="home" id="home">
-            <div class="home-content">
-                <h1>Hi, It's <span>Charles</span></h1>
+        <main>
+            <!-- ========== ACCROCHE ========== -->
+            <section class="hero" id="home">
+                <div class="container hero-grid">
+                    <div class="hero-text">
+                        <p class="availability">
+                            <span class="availability-dot"></span>
+                            Open to student jobs now · Master's internship Jan – Jun 2028
+                        </p>
 
-                <h3>
-                    I'm a <span>Student in computer Engineering</span>
-                </h3>
+                        <h1>Charles Loïc Noah</h1>
 
-                <br>
-                <br>
-                <p>
-                    Self-taught and passionate engineering student, I build innovative
-                    systems that bridge the hardware and software worlds. From an
-                     Quarto AI using Minimax with Alpha-Beta pruning to
-                    embedded systems and full-stack applications, I love tackling
-                    complex architectural challenges across Embedded Systems, Software,
-                    AI, and Data Engineering.
-                </p>
-                <div class="social-icon">
-                    <a href="https://github.com/charlesnoah344" target="_blank">
-                        <i class="bx bxl-github"></i>
-                    </a>
+                        <p class="hero-role">
+                            Computer Engineering Student
+                            <span class="gradient-text">Software, Data Engineering &amp; Cloud</span>
+                        </p>
 
-                    <a href="https://www.linkedin.com/in/charlesnoah" target="_blank">
-                        <i class="bx bxl-linkedin"></i>
-                    </a>
+                        <p class="hero-pitch">
+                            Master's student at ECAM Brussels. I ship software that runs in production:
+                            Android apps driving industrial machines and a FastAPI back-end used by 10+ people.
+                        </p>
 
-                    <a href="mailto:charlesnoah344@gmail.com">
-                        <i class="bx bx-envelope"></i>
-                    </a>
-                </div>
-
-                <div class="btn-group">
-                    <a href="#contact" class="btn">Contact</a>
-                    <a href="CV_Charles_Noah.pdf" target="_blank" class="btn">Resume</a>
-                </div>
-            </div>
-            <div class="home-img">
-                    <img src="Profile-photo.jpeg" alt="">
-                </div>
-        </section>
-
-        <section class="about" id="about">
-
-
-    <div class="about-content">
-        <h2>About <span>Me</span></h2>
-
-        <div class="about-grid">
-
-            <div class="about-box">
-                <h3>Education</h3>
-                <p>
-                    ECAM, Brussels, Belgium
-                    <br>
-                    <br>Master 1 in Industrial Engineering, Computer Science (2026 - Present)
-                </p>
-                <h4>Bachelor obtained with Distinction (2023-2026)</h4>
-            </div>
-
-            <div class="about-box">
-                <h3>Certifications</h3>
-                <p>
-                    <a href="https://certificates.cs50.io/41e137c9-850e-4ba1-884d-354beafac7f6.pdf?size=letter" target="_blank">CS50 Python</a>, Harvard University<br>
-
-                    <a href="https://cs50.harvard.edu/certificates/70910280-2fbf-476f-9b62-9810681585b4" target="_blank">CS50 AI</a>, Harvard University
-                </p>
-            </div>
-
-            <div class="about-box">
-                <h3>Achievements</h3>
-                <p>
-                    • Bachelor's Degree obtained with Distinction <br> • 
-                    Volunteer developer for the open-source project OpenBikeSensor (Avello) <br> • 
-                    Math, Physics & CS mentor (ALMA Academy)
-                </p>
-            </div>
-
-        </div>
-
-        <a href="#skills" class="btn">Read More</a>
-
-    </div>
-
-</section>
-
-        <section class="skills" id="skills">
-            <h2 class="heading">Technical <span>Skills</span></h2>
-            <p class="skills-intro">
-                Every skill below is backed by real work: internships, consulting missions
-                or personal projects. Follow the <strong>Applied in</strong> links to see
-                where I used each one.
-            </p>
-
-            <div class="skills-container">
-
-                <!-- Programming Languages -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="bx bx-code-alt"></i>
-                        <h3>Programming Languages</h3>
-                    </div>
-                    <p class="skill-category-desc">
-                        Comfortable across the whole stack, from low-level C on microcontrollers
-                        to object-oriented C# and Java applications, and Python for AI and data.
-                    </p>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <img src="icons/python.svg" alt="" loading="lazy">
-                            <h4>Python</h4>
-                            <p>AI, algorithms, data</p>
+                        <div class="hero-cta">
+                            <a href="#experience" class="btn btn-primary">See my work <i class="bx bx-down-arrow-alt"></i></a>
+                            <a href="#contact" class="btn btn-ghost">Get in touch</a>
                         </div>
-                        <div class="skill-item">
-                            <img src="icons/csharp.svg" alt="" loading="lazy">
-                            <h4>C#</h4>
-                            <p>.NET desktop apps</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/cplusplus.svg" alt="" loading="lazy">
-                            <h4>C / C++</h4>
-                            <p>Embedded firmware</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/javascript.svg" alt="" loading="lazy">
-                            <h4>JavaScript</h4>
-                            <p>Web front-end, Node.js</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="bx bx-data"></i>
-                            <h4>SQL</h4>
-                            <p>PostgreSQL, SQLite, MariaDB</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/java.svg" alt="" loading="lazy">
-                            <h4>Java</h4>
-                            <p>Android apps</p>
+
+                        <div class="socials">
+                            <a href="https://github.com/charlesnoah344" target="_blank" rel="noopener" aria-label="GitHub profile">
+                                <i class="bx bxl-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/charlesnoah" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                            <a href="mailto:charlesnoah344@gmail.com" aria-label="Send me an email">
+                                <i class="bx bx-envelope"></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="skill-proof">
-                        <p class="skill-proof-title">Applied in</p>
-                        <div class="skill-proof-links">
-                            <a href="#experience">Eco PBC: 3 Android apps (Java)</a>
-                            <a href="https://github.com/charlesnoah344/Software-Engineering-Project" target="_blank">Kitbox (C#, SQL)</a>
-                            <a href="https://github.com/charlesnoah344/Noah_Loic-Lassey_Lincoln-Quarto-PI_2C" target="_blank">Quarto AI (Python)</a>
+
+                    <div class="hero-photo">
+                        <img src="img/profile.webp" alt="Portrait of Charles Loïc Noah" width="720" height="960" fetchpriority="high">
+                        <div class="photo-badge">
+                            <i class="bx bxs-graduation"></i>
+                            <div>
+                                <strong>MSc student</strong>
+                                <span>ECAM Brussels</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Data Engineering -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="bx bx-line-chart"></i>
-                        <h3>Data Engineering</h3>
+                <div class="container">
+                    <ul class="stats reveal">
+                        <li><strong>3</strong><span>companies alongside my studies</span></li>
+                        <li><strong>~10</strong><span>production machines driven by my Android apps</span></li>
+                        <li><strong>10+</strong><span>people using my FastAPI back-end</span></li>
+                        <li><strong>96.6%</strong><span>accuracy for my traffic-sign CNN</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ========== EXPÉRIENCE ========== -->
+            <section class="section" id="experience">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <p class="eyebrow">01 · Experience</p>
+                        <h2>Professional experience</h2>
+                        <p class="section-sub">Three roles held alongside my engineering studies.</p>
                     </div>
-                    <p class="skill-category-desc">
-                        I build end-to-end data pipelines (ingestion, cleaning, transformation
-                        and orchestration) so that analytics and ML models are fed with reliable data.
-                    </p>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <img src="icons/pandas.svg" alt="" loading="lazy">
-                            <h4>Pandas</h4>
-                            <p>Data cleaning &amp; wrangling</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/numpy.svg" alt="" loading="lazy">
-                            <h4>NumPy</h4>
-                            <p>Numerical computing</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/matplotlib.svg" alt="" loading="lazy">
-                            <h4>Matplotlib</h4>
-                            <p>Data visualisation</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/kestra.svg" alt="" loading="lazy">
-                            <h4>Kestra</h4>
-                            <p>Workflow orchestration</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/dbt.svg" alt="" loading="lazy">
-                            <h4>dbt</h4>
-                            <p>SQL data modeling</p>
-                        </div>
+
+                    <div class="timeline">
+                        <article class="xp reveal" id="exp-ecopbc">
+                            <div class="xp-logo">
+                                <img src="img/logo-ecopbc.webp" alt="Eco PBC logo" width="227" height="80" loading="lazy">
+                            </div>
+                            <div class="xp-body">
+                                <div class="xp-head">
+                                    <div>
+                                        <h3>Embedded Software Developer</h3>
+                                        <p class="xp-company">Eco PBC · Student job</p>
+                                    </div>
+                                    <p class="xp-meta">Mar 2026 – Present<br>Namur, Belgium</p>
+                                </div>
+                                <ul class="xp-points">
+                                    <li>Reverse-engineered <strong>10,000+ lines</strong> of undocumented, obfuscated Android code driving PLC machines, bringing technical support in-house.</li>
+                                    <li>Built <strong>3 complete Android apps</strong> in Java that drive <strong>about ten machines</strong> in production.</li>
+                                    <li>Locked down a fleet of Android terminals in kiosk mode via MDM (Hexnode) and Device Owner enrollment over ADB.</li>
+                                    <li>Integrated Viva Wallet payments into the terminals, from APK deployment to inter-app communication.</li>
+                                </ul>
+                                <ul class="tags">
+                                    <li>Java</li><li>Android</li><li>ADB</li><li>Hexnode MDM</li><li>Viva Wallet</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="xp reveal" id="exp-eec">
+                            <div class="xp-logo">
+                                <img src="img/logo-eec.webp" alt="ECAM Engineering Consult logo" width="160" height="160" loading="lazy">
+                            </div>
+                            <div class="xp-body">
+                                <div class="xp-head">
+                                    <div>
+                                        <h3>IT Consultant</h3>
+                                        <p class="xp-company">ECAM Engineering Consult</p>
+                                    </div>
+                                    <p class="xp-meta">Aug 2025 – Present<br>Brussels, Belgium</p>
+                                </div>
+                                <ul class="xp-points">
+                                    <li>Built a dataset of <strong>500+ images</strong> and trained a computer-vision model that detects defects on glass.</li>
+                                </ul>
+                                <ul class="tags">
+                                    <li>Computer vision</li><li>Dataset building</li><li>Model training</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="xp reveal" id="exp-neurogreen">
+                            <div class="xp-logo">
+                                <img src="img/logo-neurogreen.webp" alt="Neurogreen logo" width="160" height="160" loading="lazy">
+                            </div>
+                            <div class="xp-body">
+                                <div class="xp-head">
+                                    <div>
+                                        <h3>Software Engineer Intern</h3>
+                                        <p class="xp-company">Neurogreen</p>
+                                    </div>
+                                    <p class="xp-meta">Apr – May 2026<br>Mons, Belgium</p>
+                                </div>
+                                <ul class="xp-points">
+                                    <li>Designed the <strong>FastAPI back-end</strong> of a web app for inventory management and project tracking, deployed on a Raspberry Pi and used by <strong>10+ people</strong>.</li>
+                                    <li>Cut invalid samples by <strong>15%</strong> upstream of a computer-vision model by redesigning the business logic of the pipeline.</li>
+                                </ul>
+                                <ul class="tags">
+                                    <li>Python</li><li>FastAPI</li><li>REST API</li><li>Raspberry Pi</li><li>Data pipeline</li>
+                                </ul>
+                            </div>
+                        </article>
                     </div>
-                    <div class="skill-proof">
-                        <p class="skill-proof-title">Applied in</p>
-                        <div class="skill-proof-links">
-                            <a href="#experience">Neurogreen: data pipeline for a CV model</a>
-                            <a href="#experience">ECAM Engineering Consult: training pipeline</a>
-                            <a href="https://github.com/charlesnoah344?tab=repositories&amp;q=Zoomcamp" target="_blank">Data Engineering Zoomcamp</a>
+                </div>
+            </section>
+
+            <!-- ========== PROJETS ========== -->
+            <section class="section section-alt" id="projects">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <p class="eyebrow">02 · Projects</p>
+                        <h2>Selected projects</h2>
+                        <p class="section-sub">Three projects, each with its source code on GitHub.</p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <article class="project project-featured reveal" id="proj-kitbox">
+                            <div class="project-media">
+                                <img src="img/kitbox.webp" alt="Kitbox cabinet configuration screen with a 3D preview" width="1200" height="624" loading="lazy">
+                            </div>
+                            <div class="project-body">
+                                <p class="project-kicker">Team project · Desktop app</p>
+                                <h3>Kitbox: in-store ordering &amp; inventory system</h3>
+                                <p>Desktop application for ordering kit cabinets and managing stock: 3D configurator, business-rule validation and automatic supplier orders.</p>
+                                <ul class="metrics">
+                                    <li><strong>120+</strong><span>xUnit tests</span></li>
+                                </ul>
+                                <ul class="tags">
+                                    <li>C#</li><li>.NET</li><li>Avalonia UI</li><li>MariaDB</li><li>xUnit</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://youtu.be/4YlQjickyhs" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="bx bx-play-circle"></i>Watch demo</a>
+                                    <a href="https://github.com/charlesnoah344/Software-Engineering-Project" target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="bx bxl-github"></i>View code</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project reveal" id="proj-traffic">
+                            <div class="project-media media-contain">
+                                <img src="img/traffic-sign.webp" alt="Traffic sign recognised by the model" width="486" height="486" loading="lazy">
+                            </div>
+                            <div class="project-body">
+                                <p class="project-kicker">CS50AI project · Deep learning</p>
+                                <h3>Traffic sign classification</h3>
+                                <p>Convolutional neural network (CNN) trained on the GTSRB dataset to recognise German traffic signs.</p>
+                                <ul class="metrics">
+                                    <li><strong>96.6%</strong><span>accuracy on evaluation</span></li>
+                                    <li><strong>43</strong><span>classes</span></li>
+                                </ul>
+                                <ul class="tags">
+                                    <li>Python</li><li>TensorFlow</li><li>Keras</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/charlesnoah344/Mod-le_Classification_Panneau_Signalisation" target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="bx bxl-github"></i>View code</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project reveal" id="proj-quarto">
+                            <div class="project-media">
+                                <img class="media-bottom" src="img/quarto.webp" alt="Quarto game server showing a match between two AI clients" width="517" height="862" loading="lazy">
+                            </div>
+                            <div class="project-body">
+                                <p class="project-kicker">Pair project · Game AI</p>
+                                <h3>Networked Quarto AI</h3>
+                                <p>An AI that plays the board game Quarto over the network: minimax search with alpha-beta pruning, a socket client and pytest tests.</p>
+                                <ul class="tags">
+                                    <li>Python</li><li>Minimax</li><li>Sockets</li><li>pytest</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/charlesnoah344/Noah_Loic-Lassey_Lincoln-Quarto-PI_2C" target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="bx bxl-github"></i>View code</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== COMPÉTENCES ========== -->
+            <section class="section" id="skills">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <p class="eyebrow">03 · Skills</p>
+                        <h2>Technical skills</h2>
+                        <p class="section-sub">A generalist toolbox focused on software, data and cloud. Each category links to where I used it.</p>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div class="skill-card reveal">
+                            <div class="skill-card-head">
+                                <i class="bx bx-code-alt"></i>
+                                <h3>Languages</h3>
+                            </div>
+                            <ul class="chips">
+                                <li class="chip"><img src="icons/python.svg" alt="" width="20" height="20">Python</li>
+                                <li class="chip"><img src="icons/java.svg" alt="" width="20" height="20">Java</li>
+                                <li class="chip"><img src="icons/csharp.svg" alt="" width="20" height="20">C#</li>
+                                <li class="chip"><img src="icons/cplusplus.svg" alt="" width="20" height="20">C/C++</li>
+                                <li class="chip"><img src="icons/javascript.svg" alt="" width="20" height="20">JavaScript</li>
+                                <li class="chip"><i class="bx bx-data"></i>SQL</li>
+                                <li class="chip"><img src="icons/bash.svg" alt="" width="20" height="20">Bash</li>
+                            </ul>
+                            <p class="proof">
+                                <span>Applied in</span>
+                                <a href="#exp-ecopbc">Eco PBC (Java)</a>
+                                <a href="#proj-kitbox">Kitbox (C#)</a>
+                                <a href="#exp-neurogreen">Neurogreen (Python)</a>
+                            </p>
+                        </div>
+
+                        <div class="skill-card reveal">
+                            <div class="skill-card-head">
+                                <i class="bx bx-cloud"></i>
+                                <h3>Data &amp; Cloud</h3>
+                            </div>
+                            <ul class="chips">
+                                <li class="chip"><img src="icons/googlecloud.svg" alt="" width="20" height="20">Google Cloud (BigQuery)</li>
+                                <li class="chip"><img src="icons/terraform.svg" alt="" width="20" height="20">Terraform</li>
+                                <li class="chip"><img src="icons/dbt.svg" alt="" width="20" height="20">dbt</li>
+                                <li class="chip"><img src="icons/docker.svg" alt="" width="20" height="20">Docker</li>
+                                <li class="chip chip-muted"><img src="icons/amazonwebservices.svg" alt="" width="20" height="20">AWS <em>learning</em></li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-card reveal">
+                            <div class="skill-card-head">
+                                <i class="bx bx-brain"></i>
+                                <h3>AI &amp; Machine Learning</h3>
+                            </div>
+                            <ul class="chips">
+                                <li class="chip"><img src="icons/tensorflow.svg" alt="" width="20" height="20">TensorFlow</li>
+                                <li class="chip"><img src="icons/keras.svg" alt="" width="20" height="20">Keras</li>
+                                <li class="chip"><img src="icons/scikitlearn.svg" alt="" width="20" height="20">scikit-learn</li>
+                                <li class="chip"><img src="icons/opencv.svg" alt="" width="20" height="20">OpenCV</li>
+                                <li class="chip"><img src="icons/pandas.svg" alt="" width="20" height="20">Pandas</li>
+                                <li class="chip"><img src="icons/numpy.svg" alt="" width="20" height="20">NumPy</li>
+                            </ul>
+                            <p class="proof">
+                                <span>Applied in</span>
+                                <a href="#exp-eec">Glass defect detection</a>
+                                <a href="#exp-neurogreen">Vision data pipeline</a>
+                                <a href="#proj-traffic">Traffic sign CNN</a>
+                            </p>
+                        </div>
+
+                        <div class="skill-card reveal">
+                            <div class="skill-card-head">
+                                <i class="bx bx-desktop"></i>
+                                <h3>Development</h3>
+                            </div>
+                            <ul class="chips">
+                                <li class="chip"><img src="icons/fastapi.svg" alt="" width="20" height="20">FastAPI</li>
+                                <li class="chip"><i class="bx bx-transfer-alt"></i>REST APIs</li>
+                                <li class="chip"><img src="icons/android.svg" alt="" width="20" height="20">Android</li>
+                                <li class="chip"><img src="icons/dotnetcore.svg" alt="" width="20" height="20">.NET</li>
+                                <li class="chip"><img src="icons/avalonia.svg" alt="" width="20" height="20">Avalonia UI</li>
+                                <li class="chip"><i class="bx bx-layer"></i>MVVM</li>
+                                <li class="chip"><img src="icons/react.svg" alt="" width="20" height="20">React</li>
+                                <li class="chip"><img src="icons/nodejs.svg" alt="" width="20" height="20">Node.js</li>
+                                <li class="chip chip-muted"><img src="icons/spring.svg" alt="" width="20" height="20">Spring Boot <em>basics</em></li>
+                            </ul>
+                            <p class="proof">
+                                <span>Applied in</span>
+                                <a href="#exp-neurogreen">FastAPI back-end</a>
+                                <a href="#exp-ecopbc">Android apps</a>
+                                <a href="#proj-kitbox">Kitbox desktop app</a>
+                            </p>
+                        </div>
+
+                        <div class="skill-card reveal">
+                            <div class="skill-card-head">
+                                <i class="bx bx-wrench"></i>
+                                <h3>Tools</h3>
+                            </div>
+                            <ul class="chips">
+                                <li class="chip"><img src="icons/git.svg" alt="" width="20" height="20">Git</li>
+                                <li class="chip"><img src="icons/linux.svg" alt="" width="20" height="20">Linux</li>
+                                <li class="chip"><img src="icons/pytest.svg" alt="" width="20" height="20">pytest</li>
+                                <li class="chip"><img src="icons/jira.svg" alt="" width="20" height="20">Jira</li>
+                                <li class="chip"><i class="bx bx-mobile-alt"></i>MDM (Hexnode)</li>
+                                <li class="chip"><img src="icons/claude.svg" alt="" width="20" height="20">Claude (generative AI)</li>
+                            </ul>
+                            <p class="proof">
+                                <span>Applied in</span>
+                                <a href="#exp-ecopbc">Device fleet (Hexnode)</a>
+                                <a href="#proj-quarto">Quarto AI (pytest)</a>
+                            </p>
+                        </div>
+
+                        <div class="skill-card reveal">
+                            <div class="skill-card-head">
+                                <i class="bx bx-chip"></i>
+                                <h3>Embedded</h3>
+                            </div>
+                            <ul class="chips">
+                                <li class="chip"><img src="icons/arduino.svg" alt="" width="20" height="20">Arduino</li>
+                                <li class="chip"><img src="icons/espressif.svg" alt="" width="20" height="20">ESP32</li>
+                                <li class="chip"><i class="bx bx-chip"></i>PIC microcontrollers</li>
+                                <li class="chip"><img src="icons/raspberrypi.svg" alt="" width="20" height="20">Raspberry Pi</li>
+                                <li class="chip"><img src="icons/altium.svg" alt="" width="20" height="20">Altium Designer</li>
+                            </ul>
+                            <p class="proof">
+                                <span>Applied in</span>
+                                <a href="#exp-ecopbc">PLC machines (Eco PBC)</a>
+                                <a href="#exp-neurogreen">Raspberry Pi deployment</a>
+                            </p>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Artificial Intelligence -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="bx bx-brain"></i>
-                        <h3>Artificial Intelligence</h3>
+            <!-- ========== FORMATION ========== -->
+            <section class="section section-alt" id="education">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <p class="eyebrow">04 · Education</p>
+                        <h2>Education &amp; more</h2>
                     </div>
-                    <p class="skill-category-desc">
-                        From search algorithms (Minimax with alpha-beta pruning, BFS) to convolutional
-                        neural networks, I design and train models for computer vision and
-                        decision-making. CS50 AI certified (Harvard).
-                    </p>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <img src="icons/tensorflow.svg" alt="" loading="lazy">
-                            <h4>TensorFlow</h4>
-                            <p>CNNs, deep learning</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/scikitlearn.svg" alt="" loading="lazy">
-                            <h4>Scikit-learn</h4>
-                            <p>Classical ML models</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/opencv.svg" alt="" loading="lazy">
-                            <h4>OpenCV</h4>
-                            <p>Image processing</p>
-                        </div>
-                    </div>
-                    <div class="skill-proof">
-                        <p class="skill-proof-title">Applied in</p>
-                        <div class="skill-proof-links">
-                            <a href="#experience">ECAM Engineering Consult: glass defect detection</a>
-                            <a href="https://github.com/charlesnoah344/Mod-le_Classification_Panneau_Signalisation" target="_blank">Traffic sign CNN (43 classes)</a>
-                            <a href="https://github.com/charlesnoah344/Noah_Loic-Lassey_Lincoln-Quarto-PI_2C" target="_blank">Quarto AI (Minimax)</a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Web & Desktop -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="bx bx-desktop"></i>
-                        <h3>Web &amp; Desktop</h3>
-                    </div>
-                    <p class="skill-category-desc">
-                        Full-stack development: REST APIs, web interfaces and cross-platform
-                        desktop applications built on an MVVM architecture.
-                    </p>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <img src="icons/react.svg" alt="" loading="lazy">
-                            <h4>React</h4>
-                            <p>Front-end interfaces</p>
+                    <div class="edu-grid">
+                        <div class="card reveal">
+                            <h3 class="card-title"><i class="bx bxs-graduation"></i>Education</h3>
+                            <div class="edu-list">
+                                <div class="edu-item">
+                                    <p class="edu-date">2026 – 2028</p>
+                                    <h4>MSc in Industrial Engineering, Computer Science</h4>
+                                    <p>ECAM Brussels Engineering School</p>
+                                </div>
+                                <div class="edu-item">
+                                    <p class="edu-date">2023 – 2026</p>
+                                    <h4>BSc in Industrial Engineering, Computer Science &amp; Electronics</h4>
+                                    <p>ECAM Brussels Engineering School · <strong>with Distinction</strong></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <img src="icons/fastapi.svg" alt="" loading="lazy">
-                            <h4>FastAPI</h4>
-                            <p>Python REST APIs</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/nodejs.svg" alt="" loading="lazy">
-                            <h4>Node.js</h4>
-                            <p>JavaScript back-end</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/avalonia.svg" alt="" loading="lazy">
-                            <h4>Avalonia UI</h4>
-                            <p>Cross-platform .NET UIs</p>
-                        </div>
-                    </div>
-                    <div class="skill-proof">
-                        <p class="skill-proof-title">Applied in</p>
-                        <div class="skill-proof-links">
-                            <a href="#experience">Neurogreen: AI-powered web app back-end</a>
-                            <a href="https://github.com/charlesnoah344/Projet-Chess_DB" target="_blank">Chess Federation (Avalonia)</a>
-                            <a href="https://github.com/charlesnoah344/Software-Engineering-Project" target="_blank">Kitbox desktop app</a>
+
+                        <div class="edu-side">
+                            <div class="card reveal">
+                                <h3 class="card-title"><i class="bx bx-award"></i>Certifications</h3>
+                                <ul class="plain-list">
+                                    <li><a href="https://cs50.harvard.edu/certificates/70910280-2fbf-476f-9b62-9810681585b4" target="_blank" rel="noopener">CS50AI <i class="bx bx-link-external"></i></a> HarvardX (edX), artificial intelligence</li>
+                                    <li><a href="https://certificates.cs50.io/41e137c9-850e-4ba1-884d-354beafac7f6.pdf?size=letter" target="_blank" rel="noopener">CS50P <i class="bx bx-link-external"></i></a> HarvardX (edX), programming in Python</li>
+                                </ul>
+                            </div>
+
+                            <div class="card reveal">
+                                <h3 class="card-title"><i class="bx bx-world"></i>Languages</h3>
+                                <ul class="lang-list">
+                                    <li><span>French</span><em>Native</em></li>
+                                    <li><span>English</span><em>B2, professional</em></li>
+                                    <li><span>Dutch</span><em>A2, basic</em></li>
+                                </ul>
+                            </div>
+
+                            <div class="card reveal">
+                                <h3 class="card-title"><i class="bx bx-heart"></i>Beyond code</h3>
+                                <ul class="plain-list">
+                                    <li>Maths, physics &amp; computer science tutor (ALMA Academy)</li>
+                                    <li>Open-source contributor to OpenBikeSensor (Avello)</li>
+                                    <li>Football, philosophy</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Cloud & DevOps -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="bx bx-cloud"></i>
-                        <h3>Cloud &amp; DevOps</h3>
+            <!-- ========== CONTACT ========== -->
+            <section class="section" id="contact">
+                <div class="container contact-grid">
+                    <div class="contact-intro reveal">
+                        <p class="eyebrow">05 · Contact</p>
+                        <h2>Let's work together</h2>
+                        <p class="section-sub">
+                            Looking for a student developer now, or a master's intern from January to June 2028?
+                            I'd be glad to hear from you.
+                        </p>
+                        <ul class="contact-links">
+                            <li><a href="mailto:charlesnoah344@gmail.com"><i class="bx bx-envelope"></i>charlesnoah344@gmail.com</a></li>
+                            <li><a href="https://www.linkedin.com/in/charlesnoah" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i>linkedin.com/in/charlesnoah</a></li>
+                            <li><a href="https://github.com/charlesnoah344" target="_blank" rel="noopener"><i class="bx bxl-github"></i>github.com/charlesnoah344</a></li>
+                            <li><span><i class="bx bx-map"></i>Brussels, Belgium</span></li>
+                        </ul>
                     </div>
-                    <p class="skill-category-desc">
-                        I containerise, version and deploy my applications, on cloud platforms
-                        as well as on edge devices like the Raspberry Pi.
-                    </p>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <img src="icons/amazonwebservices.svg" alt="" loading="lazy">
-                            <h4>AWS</h4>
-                            <p>Cloud computing</p>
+
+                    <form class="contact-form card reveal" action="https://formspree.io/f/mykrepjl" method="POST">
+                        <div class="form-row">
+                            <label>
+                                <span>Full name</span>
+                                <input type="text" name="name" autocomplete="name" required>
+                            </label>
+                            <label>
+                                <span>Email</span>
+                                <input type="email" name="email" autocomplete="email" required>
+                            </label>
                         </div>
-                        <div class="skill-item">
-                            <img src="icons/googlecloud.svg" alt="" loading="lazy">
-                            <h4>GCP</h4>
-                            <p>Cloud Storage, BigQuery</p>
+                        <div class="form-row">
+                            <label>
+                                <span>Phone <em>(optional)</em></span>
+                                <input type="tel" name="phone" autocomplete="tel">
+                            </label>
+                            <label>
+                                <span>Subject</span>
+                                <input type="text" name="subject">
+                            </label>
                         </div>
-                        <div class="skill-item">
-                            <img src="icons/docker.svg" alt="" loading="lazy">
-                            <h4>Docker</h4>
-                            <p>Containers, Compose</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/git.svg" alt="" loading="lazy">
-                            <h4>Git</h4>
-                            <p>Version control</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/github.svg" alt="" loading="lazy">
-                            <h4>GitHub</h4>
-                            <p>Collaboration, open source</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/linux.svg" alt="" loading="lazy">
-                            <h4>Linux</h4>
-                            <p>Servers, Raspberry Pi</p>
-                        </div>
-                    </div>
-                    <div class="skill-proof">
-                        <p class="skill-proof-title">Applied in</p>
-                        <div class="skill-proof-links">
-                            <a href="#experience">Neurogreen: deployment on Raspberry Pi</a>
-                            <a href="#experience">Eco PBC: Android device fleet (MDM, ADB)</a>
-                            <a href="https://github.com/openbikesensor" target="_blank">OpenBikeSensor (open source)</a>
-                        </div>
-                    </div>
+                        <label>
+                            <span>Message</span>
+                            <textarea name="message" rows="6" required></textarea>
+                        </label>
+                        <button type="submit" class="btn btn-primary">Send message <i class="bx bx-send"></i></button>
+                    </form>
                 </div>
-
-                <!-- Electronics & Embedded Systems -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <i class="bx bx-chip"></i>
-                        <h3>Electronics &amp; Embedded</h3>
-                    </div>
-                    <p class="skill-category-desc">
-                        I design the hardware my software runs on: microcontroller firmware,
-                        schematic capture, PCB layout and analog circuit simulation.
-                    </p>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <img src="icons/arduino.svg" alt="" loading="lazy">
-                            <h4>Arduino</h4>
-                            <p>Rapid prototyping</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="bx bx-chip"></i>
-                            <h4>PIC Microchip</h4>
-                            <p>Low-level C firmware</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/espressif.svg" alt="" loading="lazy">
-                            <h4>ESP32</h4>
-                            <p>Connected embedded systems</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="icons/altium.svg" alt="" loading="lazy">
-                            <h4>Altium Designer</h4>
-                            <p>Schematic &amp; PCB design</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="bx bx-pulse"></i>
-                            <h4>LTspice</h4>
-                            <p>Circuit simulation</p>
-                        </div>
-                    </div>
-                    <div class="skill-proof">
-                        <p class="skill-proof-title">Applied in</p>
-                        <div class="skill-proof-links">
-                            <a href="#experience">Eco PBC: embedded software &amp; PLC reverse engineering</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="experience" id="experience">
-            <h2 class="heading">Experience</h2>
-            <div class="experience-container">
-                <div class="experience-box">
-                    <div class="experience-info">
-                        <img src="EEC.png" height="100px" width="100px" alt="">
-                        <h4 style="text-align: center;">IT Consultant</h4>
-                        <p class="experience-role">ECAM Engineering Consult</p>
-                        <p class="experience-date">Aug 2025 – Present · Brussels, Belgium</p>
-                        <p>· Managed the data-collection and training pipeline for an image-analysis model built to detect defects in glass manufacturing.</p>
-                    </div>
-                </div>
-
-                <div class="experience-box">
-                    <div class="experience-info">
-                        <img src="eco_pbc-2.png" height="100px" width="100px" alt="">
-
-                        <h4 style="text-align: center;">Student Embedded Software Developer</h4>
-                        <p class="experience-role">Eco PBC</p>
-                        <p class="experience-date">Mar 2026 – Present · Namur, Belgium</p>
-                        <p>· Reverse engineering of the existing software installed on a PLC machine to ensure technical support. <br> · Built 3 full, Android applications in Java with Android Studio for 3 different PLC machines.
-                        <br>• Deployment and lockdown of a fleet of production Android devices
-                        using an MDM solution (Hexnode), including "Device Owner" mode
-                        enrollment via ADB on Android hardware without the Play Store,
-                        and the configuration of single-app kiosks.<br>
-                        • Integration of a payment solution (Viva Wallet) into the devices'
-                        application workflow, covering everything from APK deployment
-                        to inter-app communication logic within a locked-down environment.</p>
-                    </div>
-                </div>
-
-                <div class="experience-box">
-                    <div class="experience-info">
-                        <img src="logo-neurogreen.png" height="100px" width="100px" alt="">
-                        <h4 style="text-align: center;">Software Engineer Intern</h4>
-                        <p class="experience-role">Neurogreen</p>
-                        <p class="experience-date">Apr – May 2026 · Mons, Belgium</p>
-                        <p>· Backend design, conception and deployment on Raspberry Pi of an internal AI-powered web application.<br> · Optimized a data pipeline to improve data quality feeding a computer-vision model.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="projects" id="projects">
-            <h2 class="heading">Projects</h2>
-            <div class="project-box">
-
-                <div class="project-card">
-                    <img src="quarto.png" height="300px" width="300px" alt="">
-                    <h3>Networked Quarto AI</h3>
-                    <p>An high-level AI for the board game Quarto, combining Minimax with Alpha-Beta pruning and socket-based networking for smooth multiplayer play.</p>
-                    <a href="https://github.com/charlesnoah344/Noah_Loic-Lassey_Lincoln-Quarto-PI_2C" class="btn">Review Project</a>
-                </div>
-
-                <div class="project-card">
-                    <img src="chess-db.png" height="300px" width="300px" alt="">
-                    <h3>Chess Federation Management</h3>
-                    <p>A C# (Avalonia UI) management system for a chess federation, handling players, tournaments, and rankings.</p>
-                    <a href="https://github.com/charlesnoah344/Projet-Chess_DB" class="btn">Review Project</a>
-                </div>
-
-                <div class="project-card">
-                    <img src="kitbox.png" height="300px" width="300px" alt="">
-                    <h3>Full-Stack App for Kitbox's company</h3>
-                    <p>A C# desktop application used in store to configure modular cabinets, validate orders, and manage stock and supplier purchasing.</p>
-                    <a href="https://github.com/charlesnoah344/Software-Engineering-Project" class="btn">Review Project</a>
-                </div>
-
-
-                <div class="project-card">
-                    <img src="pingpong_copy.png" height="300px" width="300px" alt="">
-                    <h3>2D Ping Pong Game</h3>
-                    <p>A 2D Ping Pong game built in C# with the Avalonia UI framework.</p>
-                    <a href="https://github.com/charlesnoah344/Ping-Pong-Game" class="btn">Review Project</a>
-                </div>
-
-                <div class="project-card">
-                    <img src="demineur.png" height="300px" width="300px" alt="">
-                    <h3>Minesweeper (Pygame)</h3>
-                    <p>A recreation of the classic Minesweeper game in Python using Pygame, with procedural grid generation and mine detection.</p>
-                    <a href="https://github.com/charlesnoah344/projet-d-mineur" class="btn">Review Project</a>
-                </div>
-
-                <div class="project-card">
-                    <img src="morpion.png" height="300px" width="300px" alt="">
-                    <h3>Tic-Tac-Toe vs AI</h3>
-                    <p>A Tic-Tac-Toe game against an AI implementing the Minimax algorithm for an unbeatable opponent.</p>
-                    <a href="https://github.com/charlesnoah344/tictactoe-vs-IA" class="btn">Review Project</a>
-                </div>
-
-                <div class="project-card">
-                    <img src="hollywood.jpg" height="300px" width="300px" alt="">
-                    <h3>Degrees of Separation (BFS)</h3>
-                    <p>A breadth-first search algorithm that computes the degree of separation between two actors.</p>
-                    <a href="https://github.com/charlesnoah344/Lien-entre-Acteur" class="btn">Review Project</a>
-                </div>
-
-                <div class="project-card">
-                    <img src="signalisation.jpg" height="300px" width="300px" alt="">
-                    <h3>Traffic Sign Recognition (AI)</h3>
-                    <p>AI to identify which traffic sign appears in a photograph.</p>
-                    <a href="https://github.com/charlesnoah344/Mod-le_Classification_Panneau_Signalisation" class="btn">Review Project</a>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-    <!-- Crée ton propre formulaire sur https://formspree.io et remplace l'URL ci-dessous.
-         Sans ça, les messages du formulaire partiraient chez l'auteur original du template. -->
-    <form action="https://formspree.io/f/mykrepjl" method="POST">
-        <div class="input-group">
-            <div class="input-box">
-                <!-- Added name="name" -->
-                <input type="text" name="name" placeholder="Full Name" required>
-                <!-- Added name="email" -->
-                <input type="email" name="email" placeholder="Email" required>
-            </div>
-            <div class="input-group"></div>
-
-            <div class="input-box">
-                <!-- Added name="phone" -->
-                <input type="number" name="phone" placeholder="Phone Number">
-                <!-- Added name="subject" -->
-                <input type="text" name="subject" placeholder="Subject">
-            </div>
-            <div class="input-group"></div>
-        </div>
-
-        <div class="input-group2">
-            <!-- Added name="message" -->
-            <textarea name="message" id="" placeholder="Your Message" cols="30" rows="10" required></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </div>
-    </form>
-</section>
-
-        
+            </section>
+        </main>
 
         <footer class="footer">
-            <div class="social-icon">
-                <a href="https://github.com/charlesnoah344" target="_blank">
-                    <i class="bx bxl-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/charlesnoah" target="_blank">
-                    <i class="bx bxl-linkedin"></i>
-                </a>
-
-                <a href="mailto:charlesnoah344@gmail.com">
-                    <i class="bx bx-envelope"></i>
-                </a>
-            </div>
-
-            <ul class="list">
-
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-
-                <!-- Hide this for now 
-                <li>
+            <div class="container footer-inner">
+                <p>© 2026 Charles Loïc Noah</p>
+                <nav class="footer-nav" aria-label="Footer">
                     <a href="#experience">Experience</a>
-                </li>
-                -->
-
-                <li>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
                     <a href="#contact">Contact</a>
-                </li>
-
-                <p class="copyright">
-                    © Charles Noah | All Rights Reserved
-                </p>
-            </ul>
+                </nav>
+                <div class="socials">
+                    <a href="https://github.com/charlesnoah344" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/charlesnoah" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="bx bxl-linkedin"></i></a>
+                    <a href="mailto:charlesnoah344@gmail.com" aria-label="Send me an email"><i class="bx bx-envelope"></i></a>
+                </div>
+            </div>
         </footer>
+
         <script src="script.js"></script>
     </body>
 </html>
